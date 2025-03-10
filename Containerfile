@@ -1,5 +1,5 @@
 # Use a RHEL UBI 8 base image
-FROM registry.access.redhat.com/ubi8/python-39
+FROM registry.access.redhat.com/ubi9/python-312
 
 # Set the working directory in the container
 WORKDIR /app
