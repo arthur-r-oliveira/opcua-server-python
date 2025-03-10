@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-volume-claim
+  namespace: opc-ua-server
+  labels:
+    app: postgres
+spec:
+  storageClassName: topolvm-provisioner
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
